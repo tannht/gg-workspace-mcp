@@ -51,11 +51,29 @@ We support **25+ clients** including Claude Desktop, Cursor, VS Code, JetBrains,
 👉 **[Click here to view the full Client Configuration Guide (MCP_CLIENTS.md)](MCP_CLIENTS.md)**
 
 **Quick Example (Claude Desktop):**
+
+Using **Bun** (recommended, faster):
 ```json
 {
   "mcpServers": {
     "gg-workspace-mcp": {
       "command": "bunx",
+      "args": ["gg-workspace-mcp"],
+      "env": {
+        "GOOGLE_CLIENT_ID": "...",
+        "GOOGLE_CLIENT_SECRET": "..."
+      }
+    }
+  }
+}
+```
+
+Using **npm/npx**:
+```json
+{
+  "mcpServers": {
+    "gg-workspace-mcp": {
+      "command": "npx",
       "args": ["gg-workspace-mcp"],
       "env": {
         "GOOGLE_CLIENT_ID": "...",

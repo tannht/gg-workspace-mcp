@@ -93,11 +93,28 @@ See [MCP_CLIENTS.md](MCP_CLIENTS.md) for detailed configuration for 25+ clients.
 
 File: `~/Library/Application Support/Claude/claude_desktop_config.json` (macOS)
 
+Using **Bun** (recommended, faster):
 ```json
 {
   "mcpServers": {
     "gg-workspace-mcp": {
       "command": "bunx",
+      "args": ["gg-workspace-mcp"],
+      "env": {
+        "GOOGLE_CLIENT_ID": "your-client-id.apps.googleusercontent.com",
+        "GOOGLE_CLIENT_SECRET": "your-client-secret"
+      }
+    }
+  }
+}
+```
+
+Using **npm/npx**:
+```json
+{
+  "mcpServers": {
+    "gg-workspace-mcp": {
+      "command": "npx",
       "args": ["gg-workspace-mcp"],
       "env": {
         "GOOGLE_CLIENT_ID": "your-client-id.apps.googleusercontent.com",

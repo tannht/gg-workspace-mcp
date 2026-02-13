@@ -2,9 +2,11 @@
 
 Complete configuration guide for **gg-workspace-mcp** across all major MCP-compatible clients.
 
-**Prerequisite:** Ensure you have [Bun](https://bun.sh) installed (`curl -fsSL https://bun.sh/install | bash`).
+**Prerequisite:** Ensure you have [Bun](https://bun.sh) installed (`curl -fsSL https://bun.sh/install | bash`) OR Node.js (for npx).
 
 > The package will be automatically downloaded from npm when you run the MCP client.
+
+> **💡 Tip:** Use `bunx` (Bun) for faster startup, or `npx` (npm) if you already have Node.js installed. Both work identically.
 
 ---
 
@@ -12,11 +14,28 @@ Complete configuration guide for **gg-workspace-mcp** across all major MCP-compa
 
 **File:** `~/Library/Application Support/Claude/claude_desktop_config.json` (macOS) or `%APPDATA%\Claude\claude_desktop_config.json` (Windows)
 
+Using **Bun** (recommended):
 ```json
 {
   "mcpServers": {
     "gg-workspace-mcp": {
       "command": "bunx",
+      "args": ["gg-workspace-mcp"],
+      "env": {
+        "GOOGLE_CLIENT_ID": "your-client-id.apps.googleusercontent.com",
+        "GOOGLE_CLIENT_SECRET": "your-client-secret"
+      }
+    }
+  }
+}
+```
+
+Using **npm/npx**:
+```json
+{
+  "mcpServers": {
+    "gg-workspace-mcp": {
+      "command": "npx",
       "args": ["gg-workspace-mcp"],
       "env": {
         "GOOGLE_CLIENT_ID": "your-client-id.apps.googleusercontent.com",
@@ -412,7 +431,11 @@ GOOGLE_CLIENT_SECRET = "your-client-secret"
 ## Amp
 
 ```bash
+# Using Bun (recommended)
 amp mcp add gg-workspace-mcp -- bunx gg-workspace-mcp
+
+# Using npm
+amp mcp add gg-workspace-mcp -- npx gg-workspace-mcp
 ```
 
 ---
