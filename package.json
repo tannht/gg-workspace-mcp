@@ -1,8 +1,18 @@
 {
   "name": "gg-workspace-mcp",
-  "version": "0.0.1",
+  "version": "1.0.2",
   "description": "The fastest, most lightweight Google Workspace MCP Server powered by Bun",
-  "keywords": ["mcp", "google-workspace", "gmail", "calendar", "drive", "docs", "sheets", "slides", "bun"],
+  "keywords": [
+    "mcp",
+    "google-workspace",
+    "gmail",
+    "calendar",
+    "drive",
+    "docs",
+    "sheets",
+    "slides",
+    "bun"
+  ],
   "author": "Hoang Tan <tannht@gmail.com>",
   "license": "MIT",
   "repository": {
