@@ -55,8 +55,8 @@ We support **25+ clients** including Claude Desktop, Cursor, VS Code, JetBrains,
 {
   "mcpServers": {
     "gg-workspace-mcp": {
-      "command": "bun",
-      "args": ["run", "/absolute/path/to/gg-workspace-mcp/src/index.ts"],
+      "command": "bunx",
+      "args": ["gg-workspace-mcp"],
       "env": {
         "GOOGLE_CLIENT_ID": "...",
         "GOOGLE_CLIENT_SECRET": "..."

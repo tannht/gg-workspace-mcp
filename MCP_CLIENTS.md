@@ -4,7 +4,7 @@ Complete configuration guide for **gg-workspace-mcp** across all major MCP-compa
 
 **Prerequisite:** Ensure you have [Bun](https://bun.sh) installed (`curl -fsSL https://bun.sh/install | bash`).
 
-> Replace `/path/to/gg-workspace-mcp` with the actual absolute path to your cloned repository.
+> The package will be automatically downloaded from npm when you run the MCP client.
 
 ---
 
@@ -16,8 +16,8 @@ Complete configuration guide for **gg-workspace-mcp** across all major MCP-compa
 {
   "mcpServers": {
     "gg-workspace-mcp": {
-      "command": "bun",
-      "args": ["run", "/path/to/gg-workspace-mcp/src/index.ts"],
+      "command": "bunx",
+      "args": ["gg-workspace-mcp"],
       "env": {
         "GOOGLE_CLIENT_ID": "your-client-id.apps.googleusercontent.com",
         "GOOGLE_CLIENT_SECRET": "your-client-secret"
@@ -37,8 +37,8 @@ Complete configuration guide for **gg-workspace-mcp** across all major MCP-compa
 {
   "mcpServers": {
     "gg-workspace-mcp": {
-      "command": "bun",
-      "args": ["run", "/path/to/gg-workspace-mcp/src/index.ts"],
+      "command": "bunx",
+      "args": ["gg-workspace-mcp"],
       "env": {
         "GOOGLE_CLIENT_ID": "your-client-id.apps.googleusercontent.com",
         "GOOGLE_CLIENT_SECRET": "your-client-secret"
@@ -59,8 +59,8 @@ Complete configuration guide for **gg-workspace-mcp** across all major MCP-compa
   "servers": {
     "gg-workspace-mcp": {
       "type": "stdio",
-      "command": "bun",
-      "args": ["run", "/path/to/gg-workspace-mcp/src/index.ts"],
+      "command": "bunx",
+      "args": ["gg-workspace-mcp"],
       "env": {
         "GOOGLE_CLIENT_ID": "your-client-id.apps.googleusercontent.com",
         "GOOGLE_CLIENT_SECRET": "your-client-secret"
@@ -81,8 +81,8 @@ Complete configuration guide for **gg-workspace-mcp** across all major MCP-compa
   "servers": {
     "gg-workspace-mcp": {
       "type": "stdio",
-      "command": "bun",
-      "args": ["run", "/path/to/gg-workspace-mcp/src/index.ts"],
+      "command": "bunx",
+      "args": ["gg-workspace-mcp"],
       "env": {
         "GOOGLE_CLIENT_ID": "your-client-id.apps.googleusercontent.com",
         "GOOGLE_CLIENT_SECRET": "your-client-secret"
@@ -102,8 +102,8 @@ Complete configuration guide for **gg-workspace-mcp** across all major MCP-compa
 {
   "mcpServers": {
     "gg-workspace-mcp": {
-      "command": "bun",
-      "args": ["run", "/path/to/gg-workspace-mcp/src/index.ts"],
+      "command": "bunx",
+      "args": ["gg-workspace-mcp"],
       "env": {
         "GOOGLE_CLIENT_ID": "your-client-id.apps.googleusercontent.com",
         "GOOGLE_CLIENT_SECRET": "your-client-secret"
@@ -124,8 +124,8 @@ Complete configuration guide for **gg-workspace-mcp** across all major MCP-compa
   "mcpServers": {
     "gg-workspace-mcp": {
       "type": "local",
-      "command": "bun",
-      "args": ["run", "/path/to/gg-workspace-mcp/src/index.ts"],
+      "command": "bunx",
+      "args": ["gg-workspace-mcp"],
       "env": {
         "GOOGLE_CLIENT_ID": "your-client-id.apps.googleusercontent.com",
         "GOOGLE_CLIENT_SECRET": "your-client-secret"
@@ -145,8 +145,8 @@ Complete configuration guide for **gg-workspace-mcp** across all major MCP-compa
 {
   "mcpServers": {
     "gg-workspace-mcp": {
-      "command": "bun",
-      "args": ["run", "/path/to/gg-workspace-mcp/src/index.ts"],
+      "command": "bunx",
+      "args": ["gg-workspace-mcp"],
       "env": {
         "GOOGLE_CLIENT_ID": "your-client-id.apps.googleusercontent.com",
         "GOOGLE_CLIENT_SECRET": "your-client-secret"
@@ -166,8 +166,8 @@ Complete configuration guide for **gg-workspace-mcp** across all major MCP-compa
 {
   "mcpServers": {
     "gg-workspace-mcp": {
-      "command": "bun",
-      "args": ["run", "/path/to/gg-workspace-mcp/src/index.ts"],
+      "command": "bunx",
+      "args": ["gg-workspace-mcp"],
       "env": {
         "GOOGLE_CLIENT_ID": "your-client-id.apps.googleusercontent.com",
         "GOOGLE_CLIENT_SECRET": "your-client-secret"
@@ -189,8 +189,8 @@ Complete configuration guide for **gg-workspace-mcp** across all major MCP-compa
 {
   "mcpServers": {
     "gg-workspace-mcp": {
-      "command": "bun",
-      "args": ["run", "/path/to/gg-workspace-mcp/src/index.ts"],
+      "command": "bunx",
+      "args": ["gg-workspace-mcp"],
       "env": {
         "GOOGLE_CLIENT_ID": "your-client-id.apps.googleusercontent.com",
         "GOOGLE_CLIENT_SECRET": "your-client-secret"
@@ -210,8 +210,8 @@ Complete configuration guide for **gg-workspace-mcp** across all major MCP-compa
 {
   "mcpServers": {
     "gg-workspace-mcp": {
-      "command": "bun",
-      "args": ["run", "/path/to/gg-workspace-mcp/src/index.ts"],
+      "command": "bunx",
+      "args": ["gg-workspace-mcp"],
       "env": {
         "GOOGLE_CLIENT_ID": "your-client-id.apps.googleusercontent.com",
         "GOOGLE_CLIENT_SECRET": "your-client-secret"
@@ -231,8 +231,8 @@ Complete configuration guide for **gg-workspace-mcp** across all major MCP-compa
 {
   "mcpServers": {
     "gg-workspace-mcp": {
-      "command": "bun",
-      "args": ["run", "/path/to/gg-workspace-mcp/src/index.ts"],
+      "command": "bunx",
+      "args": ["gg-workspace-mcp"],
       "env": {
         "GOOGLE_CLIENT_ID": "your-client-id.apps.googleusercontent.com",
         "GOOGLE_CLIENT_SECRET": "your-client-secret"
@@ -250,8 +250,8 @@ Complete configuration guide for **gg-workspace-mcp** across all major MCP-compa
 
 ```toml
 [mcp_servers.gg-workspace-mcp]
-command = "bun"
-args = ["run", "/path/to/gg-workspace-mcp/src/index.ts"]
+command = "bunx"
+args = ["gg-workspace-mcp"]
 
 [mcp_servers.gg-workspace-mcp.env]
 GOOGLE_CLIENT_ID = "your-client-id.apps.googleusercontent.com"
@@ -270,8 +270,8 @@ GOOGLE_CLIENT_SECRET = "your-client-secret"
     "mcpServers": [
       {
         "name": "gg-workspace-mcp",
-        "command": "bun",
-        "args": ["run", "/path/to/gg-workspace-mcp/src/index.ts"],
+        "command": "bunx",
+        "args": ["gg-workspace-mcp"],
         "env": {
           "GOOGLE_CLIENT_ID": "your-client-id.apps.googleusercontent.com",
           "GOOGLE_CLIENT_SECRET": "your-client-secret"
@@ -293,8 +293,8 @@ GOOGLE_CLIENT_SECRET = "your-client-secret"
   "context_servers": {
     "gg-workspace-mcp": {
       "command": {
-        "path": "bun",
-        "args": ["run", "/path/to/gg-workspace-mcp/src/index.ts"],
+        "path": "bunx",
+        "args": ["gg-workspace-mcp"],
         "env": {
           "GOOGLE_CLIENT_ID": "your-client-id.apps.googleusercontent.com",
           "GOOGLE_CLIENT_SECRET": "your-client-secret"
@@ -315,8 +315,8 @@ GOOGLE_CLIENT_SECRET = "your-client-secret"
 {
   "mcpServers": {
     "gg-workspace-mcp": {
-      "command": "bun",
-      "args": ["run", "/path/to/gg-workspace-mcp/src/index.ts"],
+      "command": "bunx",
+      "args": ["gg-workspace-mcp"],
       "env": {
         "GOOGLE_CLIENT_ID": "your-client-id.apps.googleusercontent.com",
         "GOOGLE_CLIENT_SECRET": "your-client-secret"
@@ -335,7 +335,7 @@ GOOGLE_CLIENT_SECRET = "your-client-secret"
   "mcp": {
     "gg-workspace-mcp": {
       "type": "local",
-      "command": ["bun", "run", "/path/to/gg-workspace-mcp/src/index.ts"],
+      "command": ["bunx", "gg-workspace-mcp"],
       "env": {
         "GOOGLE_CLIENT_ID": "your-client-id.apps.googleusercontent.com",
         "GOOGLE_CLIENT_SECRET": "your-client-secret"
@@ -356,8 +356,8 @@ GOOGLE_CLIENT_SECRET = "your-client-secret"
 {
   "mcpServers": {
     "gg-workspace-mcp": {
-      "command": "bun",
-      "args": ["run", "/path/to/gg-workspace-mcp/src/index.ts"],
+      "command": "bunx",
+      "args": ["gg-workspace-mcp"],
       "env": {
         "GOOGLE_CLIENT_ID": "your-client-id.apps.googleusercontent.com",
         "GOOGLE_CLIENT_SECRET": "your-client-secret"
@@ -375,8 +375,8 @@ GOOGLE_CLIENT_SECRET = "your-client-secret"
 {
   "mcpServers": {
     "gg-workspace-mcp": {
-      "command": "bun",
-      "args": ["run", "/path/to/gg-workspace-mcp/src/index.ts"],
+      "command": "bunx",
+      "args": ["gg-workspace-mcp"],
       "env": {
         "GOOGLE_CLIENT_ID": "your-client-id.apps.googleusercontent.com",
         "GOOGLE_CLIENT_SECRET": "your-client-secret"
@@ -396,8 +396,8 @@ GOOGLE_CLIENT_SECRET = "your-client-secret"
 {
   "mcpServers": {
     "gg-workspace-mcp": {
-      "command": "bun",
-      "args": ["run", "/path/to/gg-workspace-mcp/src/index.ts"],
+      "command": "bunx",
+      "args": ["gg-workspace-mcp"],
       "env": {
         "GOOGLE_CLIENT_ID": "your-client-id.apps.googleusercontent.com",
         "GOOGLE_CLIENT_SECRET": "your-client-secret"
@@ -412,7 +412,7 @@ GOOGLE_CLIENT_SECRET = "your-client-secret"
 ## Amp
 
 ```bash
-amp mcp add gg-workspace-mcp -- bun run /path/to/gg-workspace-mcp/src/index.ts
+amp mcp add gg-workspace-mcp -- bunx gg-workspace-mcp
 ```
 
 ---
@@ -425,8 +425,8 @@ amp mcp add gg-workspace-mcp -- bun run /path/to/gg-workspace-mcp/src/index.ts
 {
   "mcpServers": {
     "gg-workspace-mcp": {
-      "command": "bun",
-      "args": ["run", "/path/to/gg-workspace-mcp/src/index.ts"],
+      "command": "bunx",
+      "args": ["gg-workspace-mcp"],
       "env": {
         "GOOGLE_CLIENT_ID": "your-client-id.apps.googleusercontent.com",
         "GOOGLE_CLIENT_SECRET": "your-client-secret"
@@ -446,8 +446,8 @@ amp mcp add gg-workspace-mcp -- bun run /path/to/gg-workspace-mcp/src/index.ts
 {
   "mcpServers": {
     "gg-workspace-mcp": {
-      "command": "bun",
-      "args": ["run", "/path/to/gg-workspace-mcp/src/index.ts"],
+      "command": "bunx",
+      "args": ["gg-workspace-mcp"],
       "env": {
         "GOOGLE_CLIENT_ID": "your-client-id.apps.googleusercontent.com",
         "GOOGLE_CLIENT_SECRET": "your-client-secret"

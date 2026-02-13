@@ -97,8 +97,8 @@ File: `~/Library/Application Support/Claude/claude_desktop_config.json` (macOS)
 {
   "mcpServers": {
     "gg-workspace-mcp": {
-      "command": "bun",
-      "args": ["run", "/absolute/path/to/gg-workspace-mcp/src/index.ts"],
+      "command": "bunx",
+      "args": ["gg-workspace-mcp"],
       "env": {
         "GOOGLE_CLIENT_ID": "your-client-id.apps.googleusercontent.com",
         "GOOGLE_CLIENT_SECRET": "your-client-secret"
